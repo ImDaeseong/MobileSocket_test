@@ -244,6 +244,12 @@ func sendMessage(conn net.Conn, message Message) error {
 }
 
 func sendFilesToClient(clientID string) {
+
+	if _, err := os.Stat(filesDir); os.IsNotExist(err) {
+		log.Printf("디렉토리가 존재하지 않습니다: %s", filesDir)
+		return
+	}
+
 	files, err := os.ReadDir(filesDir)
 	if err != nil {
 		log.Printf("파일 디렉토리 읽기 오류: %v", err)
