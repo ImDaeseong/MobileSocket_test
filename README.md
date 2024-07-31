@@ -8,3 +8,6 @@ SocketClient 클라이언트 : Socket 사용해서 구현한 코틀린 클라이
 
 파이썬 프로그램 배포 방법<br>
 pyinstaller --onefile main.py
+
+go 프로그램 실행 파일 만들기<br>
+E:\GoApp\src>go build -o mobileserve.exe MobileServer.go
