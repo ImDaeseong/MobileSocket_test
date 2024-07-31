@@ -103,7 +103,7 @@ func main() {
 	server = NewServer()
 	defer server.Shutdown()
 
-	listener, err := net.Listen("tcp", ":11011")
+	listener, err := net.Listen("tcp", ":51111")
 	if err != nil {
 		log.Fatalf("네트워크 오류: %v", err)
 	}

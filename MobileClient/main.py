@@ -224,7 +224,7 @@ async def main():
     socket_manager.set_on_disconnect_listener(lambda: print("서버와의 연결 종료됨"))
     socket_manager.set_on_send_complete_listener(lambda length: print(f"전송 완료: {length} 바이트"))
 
-    await socket_manager.connect('127.0.0.1', 11011)
+    await socket_manager.connect('127.0.0.1', 51111)
 
     # 사용자 입력 처리와 메시지 수신을 동시에 실행
     await asyncio.gather(

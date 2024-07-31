@@ -168,8 +168,8 @@ class Server:
             logging.info(f'현재 연결: {active_connections}, 총 전송량: {total_transferred} 바이트')
 
     async def start(self):
-        self._server = await asyncio.start_server(self.handle_client, '0.0.0.0', 11011)  # 서버 시작
-        logging.info('서버 시작: 0.0.0.0:11011')
+        self._server = await asyncio.start_server(self.handle_client, '0.0.0.0', 51111)  # 서버 시작
+        logging.info('서버 시작: 0.0.0.0:51111')
 
     async def stop(self):
         if self._server:

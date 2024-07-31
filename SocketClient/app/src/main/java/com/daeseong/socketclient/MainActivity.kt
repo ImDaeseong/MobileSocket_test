@@ -188,7 +188,7 @@ class MainActivity : AppCompatActivity() {
     private fun connectToServer() {
         lifecycleScope.launch {
             val serverIP = sIP
-            val port = 11011
+            val port = 51111
 
             try {
                 log("서버 연결 시도 중...")

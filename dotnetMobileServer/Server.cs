@@ -40,9 +40,9 @@ namespace dotnetMobileServer
         // 서버 시작
         public async Task StartAsync(CancellationToken cancellationToken)
         {
-            _listener = new TcpListener(IPAddress.Any, 11011);
+            _listener = new TcpListener(IPAddress.Any, 51111);
             _listener.Start();
-            Log("서버 시작: 0.0.0.0:11011");
+            Log("서버 시작: 0.0.0.0:51111");
 
             try
             {

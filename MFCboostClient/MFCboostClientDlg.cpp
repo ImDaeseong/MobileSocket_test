@@ -90,7 +90,7 @@ void CMFCboostClientDlg::OnBnClickedButton1()
     CString serverIP;
     m_ctrlIP.GetWindowText(serverIP);
     std::string ip = CT2A(serverIP);
-    int port = 11011;
+    int port = 51111;
 
     log(_T("서버 연결 시도 중..."));
     socket_manager_->connect(ip, port);

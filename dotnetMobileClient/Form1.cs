@@ -100,7 +100,7 @@ namespace dotnetMobileClient
         private async void button1_Click(object sender, EventArgs e)
         {
             string serverIp = textBox1.Text;
-            int port = 11011;
+            int port = 51111;
 
             await socketManager.Connect(serverIp, port);
             _ = socketManager.Listen();
